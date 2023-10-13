@@ -6,39 +6,98 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src = "script.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
             <div class="page-title">
-                <!-- image -->
+                <span class="material-icons">dashboard</span>
                 <div class="dashboard">Dashboard</div>
             </div>
             <div class="page-path">
-                <div class="path">Home</div>
-                <div class="path">Profile</div>
-                <div class="path">Messages</div>
-                <div class="path">History</div>
-                <div class="path">Tasks</div>
-                <div class="path">Communties</div>
+                <div class="icon-container">
+                    <span class="material-icons">home</span>
+                    <div class="path">Home</div>
+                </div>
+                <div class="icon-container">
+                    <span class="material-icons">account_box</span>
+                    <div class="path">Profile</div>
+                </div>
+                <div class="icon-container">
+                    <span class="material-icons">chat_bubble</span>
+                    <div class="path">Messages</div>
+                </div>
+                <div class="icon-container">
+                    <span class="material-icons">schedule</span>
+                    <div class="path">History</div>
+                </div>
+                <div class="icon-container">
+                    <span class="material-icons">task</span>
+                    <div class="path">Tasks</div>
+                </div>
+                <div class="icon-container">
+                    <span class="material-icons">groups</span>
+                    <div class="path">Communities</div>
+                </div>
             </div>
             <div class="page-tech">
-                <div class="tech">Settings</div>
-                <div class="tech">Support</div>
-                <div class="tech">Privacy</div>
+                <div class="icon-container">
+                    <span class="material-icons">settings</span>
+                    <div class="tech">Settings</div>
+                </div>
+                <div class="icon-container">
+                    <span class="material-icons">info</span>
+                    <div class="tech">Support</div>
+                </div>
+                <div class="icon-container">
+                    <span class="material-icons">verified_user</span>
+                    <div class="tech">Privacy</div>
+                </div>
             </div>
         </div>
 
-        <div class="header"></div>
+        <div class="header">
+            <div class="search-bar">
+                <input type="text">
+            </div>
+            <div class="user-welcome">
+                <div class="welcome-message">Hi there,</div>
+                <div class="user-name">Noah Bigler (@Asturuf)</div>
+            </div>
+            <div class="user-profile">Noah Bigler</div>
+            <div class="user-button">
+                <button>New</button>
+                <button>Upload</button>
+                <button>Share</button>
+            </div>
+        </div>
 
         <div class="content">
-            <div class="content-grid">
-                <div class="card">1</div>
-                <div class="card">2</div>
-                <div class="card">3</div>
-                <div class="card">4</div>
-                <div class="card">5</div>
-                <div class="card">6</div>
+            <div class="project-title">Your Projects</div>
+            <div class="project-grid">
+                <div class="project-card">1</div>
+                <div class="project-card">2</div>
+                <div class="project-card">3</div>
+                <div class="project-card">4</div>
+                <div class="project-card">5</div>
+                <div class="project-card">6</div>
+            </div>
+
+            <div class="announcement-title">Announcements</div>
+            <div class="announcement-grid">
+                <div class="announcement-card">1</div>
+                <div class="announcement-card">2</div>
+                <div class="announcement-card">3</div>
+            </div>
+
+            <div class="trending-title">Trending</div>
+            <div class="trending-grid">
+                <div class="trending-card">1</div>
+                <div class="trending-card">2</div>
+                <div class="trending-card">3</div>
+                <div class="trending-card">4</div>
             </div>
         </div>
     </div>
