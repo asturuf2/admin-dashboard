@@ -20,7 +20,7 @@ grid-template-rows:1fr 4fr;
     grid-column:1/2;
     grid-row:1/-1;
     background-color: #00acee;
-    padding:10px;
+    padding:20px 20px 10px;
     display:grid;
     grid-template-rows:1fr 4fr 3fr 1fr;
 }
@@ -88,12 +88,14 @@ input{
     display:grid;
     grid-template-columns: 1fr 5fr;
     align-items:center;
+    font-family:'Roboto';
 }
 
 .user-welcome>span{
     grid-row: 1/3;
     font-size:3rem;
     padding-left:30px;
+    padding-right:20px;
 }
 
 .welcome-message{
@@ -180,11 +182,11 @@ button{
     background-color:white;
     border-left: 5px goldenrod solid;
     border-radius:5px;
-    min-width:200px;
     overflow:hidden;
     display:grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-rows:repeat(3,auto);
+    min-width:200px;
 }
 
 .project-card-title, .project-card-content, .project-card>span{
@@ -203,19 +205,20 @@ button{
     margin-bottom: 10px;;
     color:grey;
     overflow:hidden;
-    max-height:60px;
+    max-height:100px;
     grid-row:2/3;
     grid-column: 1/3;
 }
 
 .span-container{
-    position: relative;
-    float:right;
+    /* position: relative;
+    float:right; */
     padding:10px;
     color:darkgrey;
-    display:flex;
     grid-row:3/4;
-    grid-column: 2/3;;
+    grid-column: 2/3;
+    display:flex;
+    align-self:end;
 }
 
 .span-container>span{
@@ -236,13 +239,32 @@ button{
 .announcement-grid{
     display:grid;
     grid-template-rows: 1fr 1fr 1fr;
-    gap:5px;
+    padding:10px;
+    background-color: white;
+    border-radius:5px;
 }
 
 .announcement-card{
-    height:100%;
     background-color: white;
-    border-radius:5px;
+    padding:10px;
+    max-height: 100%;  
+}
+.announcement-card:nth-child(2){
+    border-top:lightgray 1px solid;
+}
+
+.announcement-card:nth-child(3){
+    border-top:lightgray 1px solid;
+}
+
+.announcement-name{
+    font-weight:bold;
+    font-size:1rem;
+}
+
+.announcement-content{
+    color:darkgrey;
+    font-size:smaller;
 }
 
 /* trending content */
@@ -257,13 +279,34 @@ button{
 .trending-grid{
     display:grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 5px;
+    padding: 10px;
+    border-radius:5px;
+    background-color: white;
 }
 
 .trending-card{
     height:100%;
     background-color: white;
-    border-radius:5px;
+    display:grid;
+    grid-template-rows:1fr 1fr;
+    grid-template-columns: 1fr 4fr;
+    align-items:center;
+}
+
+.trending-card>span{
+    grid-column:1/2;
+    grid-row:1/3;
+    font-size:2rem;
+}
+
+.tag{
+    align-self:end;
+    
+}
+
+.full-name{
+    color:darkgray;
+    align-self:start;
 }
 
 
